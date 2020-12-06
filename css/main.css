@@ -416,8 +416,8 @@ ul li {
   background-image: url(../img/vk.png)
 }
 
-.socials__item--icon--fb .socials__link {
-  background-image: url(../img/f.png);
+.socials__item--icon--fb--active .socials__link {
+  background-image: url(../img/f2.png);
 }
 
 .socials__item--icon--inst .socials__link {
