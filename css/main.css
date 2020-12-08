@@ -4,7 +4,8 @@ body {
   font-family: "Open Sans", "Helvetica", sans-serif;
   line-height: 1.42;
   background-color: #001821;
-  color: #fff; 
+  color: #fff;
+  margin: 0; 
 }
 
 a {
@@ -36,27 +37,31 @@ ul li {
   list-style: none;
 }
 
+
 .container, .main {
   width: 1140px;
   margin: 0 auto;
 }
 
 .header {
-  height: 120px;
+  min-height: 120px;
   position: relative; 
   margin-bottom: 65px;
+}
+
+.logo, .menu, .contacts, .socials {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .logo {
   display: block;
   position: absolute;
-  top: 23px;
   left: 0;
 }
 
 .menu {
   position: absolute;
-  top: 32px;
   left: 165px;
 }
 
@@ -73,7 +78,6 @@ ul li {
 
 .menu__link {
   font-size: 14px;
-  color: inherit;
   text-decoration: none;
 }
 
@@ -83,7 +87,6 @@ ul li {
 
 .contacts {
   position: absolute;
-  top: 25px;
   right: 0;
   text-align: right;
   font-style: normal;
@@ -220,30 +223,39 @@ ul li {
   margin-bottom: 23px;
 }
 
-.button-features {
+.features__desc-button.btn {
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   color: #F5170E;
+  background-color: #fff;
   border: 1px solid #F5170E;
   border-radius: 45px;
   padding: 18px 30px;
 }
 
-.button-features--active {
+.features__desc-button.btn:hover {
+  background-color: #F5170E;
+  color: #fff;
+}
+
+.features__desc-button.btn--active {
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+  color: #fff;
+  background-color: #F5170E;
   border-radius: 45px;
   padding: 18px 30px;
-  background-color: #F5170E;
-  color: #fff;
 }
 
+.news {
+  margin-bottom:100px;
+}
 
 .news__title {
   font-weight: bold;
@@ -334,6 +346,10 @@ ul li {
   line-height: 32px;
 }
 
+.about {
+  margin-bottom: 65px;
+}
+
 .about:before {
   content: "";
   display: inline-block;
@@ -341,18 +357,16 @@ ul li {
   width: 490px;
   height: 505px;
   background: url(../img/gates.png) center center / cover no-repeat;
-  margin-top: 150px;
-
 }
 
 .about__desc {
   background: url(../img/mountains.png) center / cover no-repeat;
   display: inline-block;
-  vertical-align: top;
+  border-radius: 5px;
   width: 785px;
-  padding: 70px 80px;
+  padding: 70px 180px 70px 80px;
   margin-left: -141px;
-  margin-top: 245px;
+  margin-top: 138px;
   min-height: 455px;
 }
 
@@ -380,20 +394,18 @@ ul li {
 .footer {
   position: relative;
   height: 152px;
-  top:80px;
+  border-top: 5px solid#001821;
 }
 
 
 .socials {
   display: inline-block;
   position: absolute;
-  top: 25px;
-  right: 250px;
+  left: 660px;
 }
 
 .socials__item {
   display: inline-block;
-  vertical-align: middle;
   margin-right: 10px;
 }
 
