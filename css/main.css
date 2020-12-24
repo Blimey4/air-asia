@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 body {
   font-family: "Open Sans", "Helvetica", sans-serif;
@@ -46,11 +46,6 @@ ul li {
   flex-shrink: 0;
 }
 
-.header__col--align--right, .footer__col--align--right {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .logo {
   margin-right: 80px;
 }
@@ -78,10 +73,13 @@ ul li {
 
 .menu__link:hover {
   color: #DA0100;
+  transition: 0.3s;
 }
 
 .contact {
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .contact__tel {
@@ -95,6 +93,66 @@ ul li {
   text-decoration: underline;
   font-size: 13px;
   color: #98A4A8;
+  position: relative;
+}
+
+.contact__schedule:hover .contact__menu {
+  display: block;
+}
+
+.contact__schedule:hover .contact__triangle{
+  display: block;
+}
+
+.contact__menu {
+  text-align: center;
+  width: 130px;
+  height: 45px;
+  right: 0;
+  position: absolute;
+  background: #EDEDED;
+  padding: 10px;
+  border-radius: 5px;
+  top: 63%;
+  display: none;
+  margin-top: 20px;
+}
+
+.contact__triangle {
+  border: 20px solid transparent;
+  width: 0;
+  height: 0;
+  border-bottom-color: #EDEDED;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  display: none;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-bottom-width: 11px;
+}
+
+.contact__menu:before {
+  content: "";
+  display: block;
+  height: 30px;
+  left: 0;
+  right: 0;
+  top: -22px;
+  position: absolute;
+}
+
+.contact__menu-dinner, .contact__menu-time {
+  font-size: 13px;
+  color: #1E1F20;
+}
+
+.contact__menu-time {
+  font-weight: bold;
+}
+
+.contact__menu-dinner {
+  font-weight: 600;
 }
 
 .hero {
@@ -132,6 +190,7 @@ ul li {
 
 .hero__btn:hover {
   background-color: #DA0100;
+  transition: 0.5s;
 }
 
 .tour {
@@ -164,6 +223,9 @@ ul li {
 .tour-block__content{
   padding: 33px 20px 26px 22px;
   color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .tour-block__title {
@@ -212,13 +274,13 @@ ul li {
   color: #F5170E;
   background-color: #fff;
   padding: 18px 30px;
-  width: 24%;
   margin-top: auto;
 }
 
 .tour-block__btn:hover {
   color: #fff;
   background-color: #F5170E;
+  transition: 0.5s;
 }
 
 .news-title {
@@ -306,6 +368,7 @@ ul li {
 .paginator__item--active .paginator__link, .paginator__link:hover {
   background: #fff;
   color: #F5170E;
+  transition: 0.3s;
 }
 
 
@@ -387,6 +450,11 @@ ul li {
 
 .socials__item {
   margin-right: 10px;
+}
+
+.socials__item:hover {
+  opacity: 0.7;
+  transition: 0.4s;
 }
 
 .socials__item:last-child {
