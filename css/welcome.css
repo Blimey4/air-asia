@@ -50,11 +50,11 @@ button {
   color: #fff;
 }
 
-.btn__welcome {
+.welcome__btn {
   padding: 18px 50px;
 }
 
-.btn__welcome:hover {
+.welcome__btn:hover {
   background: #DA0100;
 }
 
