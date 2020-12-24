@@ -54,6 +54,10 @@ button {
   padding: 18px 50px;
 }
 
+.btn__welcome:hover {
+  background: #DA0100;
+}
+
 .welcome {
   display: flex;
   position: fixed;
