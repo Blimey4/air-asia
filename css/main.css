@@ -193,6 +193,10 @@ ul li {
   transition: 0.5s;
 }
 
+.menu__link--active {
+  color: #DA0100;
+}
+
 .tour {
   margin-bottom: 127px;
 }

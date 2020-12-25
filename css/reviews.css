@@ -177,6 +177,10 @@ button {
   font-weight: bold;
 }
 
+.menu__link--active {
+  color: #DA0100;
+}
+
 .contact__menu-dinner {
   font-weight: 600;
 }
@@ -272,7 +276,7 @@ button {
 }
 
 .review__user::after {
-  content: url(../img/avatar/vk-blue\ 1.png);
+  content: url(../img/avatar/vk-blue1.png);
   margin-left: 2px;
   height: 29px;
 }
@@ -280,6 +284,9 @@ button {
 .review__tags {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+  row-gap: 5px;
 }
 
 .tag {
@@ -362,6 +369,8 @@ button {
 
 .separator {
   background: url(../img/avatar/Rectangle.png) center no-repeat;
+  background-color: #f3cfc3;
+  background-size: cover;
   min-height: 363px;
   display: flex;
   flex-direction: column;
@@ -381,8 +390,11 @@ button {
 }
 
 .separator__image {
-  height: 362px;
-  width: 341px;
+  height: 363px;
+  width: 487px;
+  object-fit: contain;
+  object-position: bottom;
+  align-self: flex-end;
 }
 
 .inner-section {
@@ -412,6 +424,11 @@ button {
   padding: 20px 30px;
   font-size: 18px;
   color: #1A1B1E;
+}
+
+.form__input:focus {
+  border: none;
+  outline: 1px solid red;
 }
 
 .form__input::placeholder {
